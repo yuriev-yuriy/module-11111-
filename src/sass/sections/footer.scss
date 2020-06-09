@@ -1,0 +1,51 @@
+.container-footer {
+  border-top: 1px solid rgb(229, 229, 229);
+  padding-bottom: 12px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+
+  &__desc {
+    line-height: 16px;
+    color: $font-color;
+  }
+
+  &__link {
+    color: $third-font-color;
+  }
+}
+
+
+.contact-form {
+  display: flex;
+
+  &__input {
+    height: 40px;
+    width: 228px;
+    padding-left: 10px;
+    border: 1px solid rgb(231, 231, 231);
+  }
+
+  &__btn {
+    border: none;
+    background-color: rgb(149, 225, 211);
+    color: rgb(255, 255, 255);
+    width: 150px;
+    height: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  &__input::placeholder {
+    font-family: $main-font;
+    font-size: 15px;
+    line-height: 24px;
+    font-style: italic;
+    color: $second-font-color;
+  }
+}

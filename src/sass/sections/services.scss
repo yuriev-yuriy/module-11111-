@@ -1,0 +1,93 @@
+.main {
+  padding-top: 54px;
+  padding-bottom: 82px;
+}
+
+
+.section-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: $font-color;
+
+  & span {
+    font-family: "Kaushan Script", cursive;
+    font-size: 24px;
+    line-height: 28px;
+    display: block;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: $third-font-color;
+    margin: 40px auto 66px;
+  }
+}
+
+.section {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 100px;
+  }
+
+  &__item {
+    flex-basis: 374px;
+    text-align: left;
+    position: relative;
+  }
+
+  &__icon {
+    background-repeat: no-repeat;
+
+    &--alarm {
+      background-image: url(../images/icons/alarm.svg);
+    }
+
+    &--line {
+      background-image: url(../images/icons/line.svg);
+    }
+
+    &--comp {
+      background-image: url(../images/icons/comp.svg);
+    }
+
+    &--book {
+      background-image: url(../images/icons/book.svg);
+    }
+
+    &--home {
+      background-image: url(../images/icons/home.svg);
+    }
+
+    &--image {
+      background-image: url(../images/icons/image.svg);
+    }
+  }
+
+  &__text {
+    padding-left: 80px;
+  }
+
+  &__subtitle {
+    line-height: 16px;
+    color: $font-color;
+    text-transform: uppercase;
+    padding-bottom: 14px;
+    margin: 0;
+  }
+
+  &__desc {
+    font-family: $font;
+    font-size: 15px;
+    line-height: 24px;
+    color: $second-font-color;
+    margin: 0;
+  }
+}
